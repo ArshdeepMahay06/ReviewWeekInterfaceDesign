@@ -1,0 +1,288 @@
+html{
+  scroll-behavior: smooth;
+}
+body{
+  margin: 0;
+}
+
+p,a,li,input,label,textarea,::placeholder{
+  font-size: 20px;
+  font-family: 'Lato',sans-serif;
+}
+header{
+  height: 125px;
+  background-color: #3333bf;
+}
+
+header nav{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+header nav div{
+  height: 115px;
+}
+
+header nav div img{
+  height: 100%;
+  width: auto;
+}
+
+header nav menu{
+  list-style: none;
+  display: flex;
+  padding: 0px 25px;
+  margin: 0px;
+}
+header nav menu li{
+  padding: 0px 10px;
+}
+header nav menu li a{
+  color: #f4f4f4;
+  text-decoration: none;
+  transition: all .25s linear;
+}
+header nav menu li:hover a{
+  border-bottom: solid 4px #f9a825;
+}
+
+header nav menu li::after{
+  content: "|";
+  padding-left: 7px;
+  color: white;
+}
+
+header nav menu li:nth-child(2)::after{
+  content: "";
+}
+
+
+section.masthead{
+  background: url(./img/4.jpg);
+  min-height: 60vh;
+  background-size: cover;
+  font-size: 4em;
+  background-position: center;
+  background-size: cover;
+  padding: 4em 4em;
+  color: #f4f4f4;
+  position: relative;
+}
+
+
+.masthead .arrow,
+ .masthead .arrow:before{
+     position: absolute;
+     left: 50%;
+ }
+ .masthead .arrow{
+     width: 40px;
+     height: 40px;
+     top: 85%;
+     margin: -20px 0 0 -20px;
+     border-left: none;
+     border-top: none;
+     border-bottom: 5px #000000 solid;
+     border-right: 5px #000000 solid;
+     transform: rotate(45deg);
+     transition: .3s ease;
+ }
+
+ .masthead .arrow:hover{
+  top: 90%;
+ }
+
+
+
+main{
+  background-color: #2222f7;
+  color: white;
+  justify-content: center;
+  text-align: center;
+  padding: 0;
+}
+
+main .title-section{
+  padding: 3em 4em;
+  min-height: 30vh;
+}
+
+main .img-section{
+  clip-path: polygon(50% 20%, 100% 0, 100% 100%, 0 100%, 0 0);
+  z-index: 2;
+  display: flex;
+  height: 60vh;
+}
+
+main .img-section .img1{
+  background: url(./img/7.jpg);
+  background-size: cover;
+  background-position: center;
+  background-size: cover;
+  position: relative;
+  transition: .2s ease;
+  color: transparent;
+}
+
+main .img-section .img1::after{
+  position: absolute;
+  top: 0;
+  left: 0;
+  content: "";
+  height: 100%;
+  width: 100%;
+  background-color: rgba(0, 0, 0, 0.3);
+  z-index: -2;
+}
+
+main .img-section .img1:hover{
+  color: white;
+}
+
+main .img-section .img2{
+  background: url(./img/1.jpg);
+  background-size: cover;
+  background-position: center;
+  background-size: cover;
+  position: relative;
+  color: transparent;
+  transition: .2s ease;
+}
+
+main .img-section .img2::after{
+  position: absolute;
+  top: 0;
+  left: 0;
+  content: "";
+  height: 100%;
+  width: 100%;
+  background-color: rgba(0, 0, 0, 0.3);
+  z-index: -2;
+}
+
+main .img-section .img2:hover{
+  color: white;
+}
+
+main .img-section div.text{
+  padding-top: 10em;
+}
+
+
+section.youtube-video iframe{
+  width: 100%;
+  height: 80vh;
+  padding: 0;
+  margin: 0;
+}
+
+section.contact-us-section{
+  background-color: #7FFFD4;
+  min-height: 30vh;
+  padding: 3em;
+}
+
+section.contact-us-section h2{
+  font-size: 3em;
+}
+
+/* creating svg */
+.svg-btn{
+  position: absolute;
+  width: 200px;
+  height: 60px;
+  color: white;
+  font-size: 1.3em;
+  font-weight: 750;
+  text-transform: uppercase;
+  text-align: center;
+  line-height: 60px;
+  transition: 0.5s;
+  text-decoration: none;
+}
+
+.svg-btn svg, .svg-btn svg rect{
+  position: absolute;
+  left: 0;
+  right: 0;
+  width: 100%;
+  height: 100%;
+  fill: transparent;
+  transition: 0.5s;
+  border: 4px solid white;
+}
+
+.svg-btn svg rect{
+  stroke: #f8f8f8;
+  stroke-width: 4px;
+  stroke-dasharray: 520;
+  stroke-dashoffset: 520;
+}
+
+.svg-btn:hover{
+  transition-delay: 0.5s;
+  background-color: #f8f8f8;
+  color: #120527;
+}
+
+.svg-btn:hover svg rect{
+  stroke-dashoffset: 0;    
+}
+
+.svg-btn{
+  left: 660px;
+}
+
+
+footer{
+  background-color: #2222f7;
+  padding: 0;
+}
+
+footer .container{
+  display: flex;
+  height: 50vh;
+  align-items: center;
+  justify-content: space-around;
+}
+
+footer div.container div.logo{
+  background: url(./img/white-logo.png);
+  height: 100%;
+}
+
+footer div.container div.logo img{
+  height: 90%;
+  width: auto;
+}
+
+footer div.container form input , footer div.container form textarea,footer div.container form button{
+  display: block;
+  margin: 1em 0;
+  border: 2px solid white;
+  outline: none;
+  background-color: #2222f7;
+  padding: .7em;
+  color: white;
+  width: 90%;
+}
+
+::placeholder{
+  color: white;
+  text-transform: capitalize;
+}
+
+footer div.container form button{
+  margin: auto;
+  width: 100%;
+  font-size: larger;
+  font-weight: bold;
+}
+
+footer p{
+  background-color: black;
+  color: white;
+  text-align: center  ;
+  padding: 3em 0;
+}
