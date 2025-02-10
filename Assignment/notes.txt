@@ -1,1 +1,6 @@
 
+Column 1  ->  The turkey, Mom, Dad, The dog, My teacher, The elephant, The cat
+Column 2  ->  sat on, ate, danced with, saw, doesn't like, kissed
+Column 3  ->  a funny, a scary, a goofy, a slimmy, a barking, a fat
+Column 4  ->  goat, monkey, fish, cow, frog, bug, worm
+Column 5  ->  on the moon, on the chair, in my spaghetti, in my soup, on the grass, in my shoes
